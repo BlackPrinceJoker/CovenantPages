@@ -212,6 +212,7 @@
                     const modalBody = document.querySelector('#businessModal .modal-body');
                     modalBody.innerHTML = `                       
                         <img src="${business.id + ".png"}" class="card-img-top" alt="${business.name}">
+                        <h3 class="card-title fs-4 fw-semibold">${business.name.replaceAll (';', ',')}</h3>
                         <p id="modalDescription" class="fw-semibold">${business.description.replaceAll (';', ',')}</p>
                         <p id="modalOwner"><span class="highlight">Owner:</span> ${business.owner}</p>
                         ${business.phone ?` <p id="modalPhone"><span class="highlight">Phone:</span> ${business.phone}</p> ` : ''}
