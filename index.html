@@ -207,7 +207,7 @@
                 `;
                 // Add click event to open modal
                 card.addEventListener('click', () => {
-                    document.getElementById('businessModalLabel').textContent = business.name || 'Unknown Business';
+                    document.getElementById('businessModalLabel').textContent = business.name.replaceAll (';', ',') || 'Unknown Business';
                     
                     const modalBody = document.querySelector('#businessModal .modal-body');
                     modalBody.innerHTML = `                       
