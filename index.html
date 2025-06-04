@@ -189,7 +189,7 @@
                     <div class="card h-100 border-0 shadow">
                         <img src="${business.id}.png" class="card-img-top" alt="${business.name}">
                         <div class="card-body">
-                            <h3 class="card-title fs-4 fw-semibold">${business.name}</h3>
+                            <h3 class="card-title fs-4 fw-semibold">${business.name.replaceAll (';', ',')}</h3>
                             <p class="card-text text-muted">${business.description.replaceAll (';', ',')}</p>
                             <p class="text-muted small"><span class="highlight">Services:</span> ${business.services.replaceAll(';', ',')}</p>
                             ${business.phone ? `<p class="text-muted small"><span class="highlight">Phone:</span> ${business.phone || "No phone available."}</p> ` : ''}
