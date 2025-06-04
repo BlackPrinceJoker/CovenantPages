@@ -1,2 +1,2 @@
-id,owner,name,description,services,area,address,phone,email,website,category
-1,Cameron Weaver,Matha Cum Laude,"Matha Cum Laude is a Christian-based, comprehensive mathematics organization providing families with professionally trained math teachers who foster the development of critical thinking skills in our students and satisfy all standards for each grade level.",6th Grade Math - Calculus,Online,,,cameron@mathacumlaude.com,www.mathacumlaude.com,Education
+id,owner,name,services,area,address,phone,email,website,category,description
+1,Cameron Weaver,Matha Cum Laude,6th Grade Math - Calculus,Online,,,cameron@mathacumlaude.com,www.mathacumlaude.com,Education,Matha Cum Laude is a Christian-based; comprehensive mathematics organization providing families with professionally trained math teachers who foster the development of critical thinking skills in our students and satisfy all standards for each grade level.
