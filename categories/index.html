@@ -286,7 +286,7 @@ ${business.website ? `<a href="${business.website}" class="btn accent-bg mt-3">V
  }
 
  // Load and process CSV
- fetch('https://covenantpages.com/businesses.csv')
+ fetch('//businesses.csv')
  .then(response => response.text())
  .then(csvText => {
  const businesses = parseCSV(csvText);
