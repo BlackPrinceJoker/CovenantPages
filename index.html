@@ -221,7 +221,7 @@
                         <p id="modalServices"><span class="highlight">Services:</span> ${business.services.replaceAll(';', ',')}</p>
                         ${business.address ? ` <p id="modalAddress"><span class="highlight">Address:</span> ${business.address.replaceAll(';', ',')}</p> ` : ''}
                         <p id="modalArea"><span class="highlight">Service Area:</span> ${business.area}</p>
-                        ${business.website ? `<a href="${business.website}" class="btn hover-text mt-3 highlight">Visit Website</a>` : ''}
+                        ${business.website ? `<a href="${business.website}" class="btn btn-secondary hover-text mt-3 highlight">Visit Website</a>` : ''}
                    `; 
                     const modal = new bootstrap.Modal(document.getElementById('businessModal'));
                     modal.show();
