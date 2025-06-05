@@ -50,7 +50,7 @@
             border-radius: 10px;
         }
         .modal-header {
-            background-color: #4a77cc;
+            background-color: #343d68;
             color: #fff;
         }
     </style>
@@ -207,8 +207,6 @@
                 `;
                 // Add click event to open modal
                 card.addEventListener('click', () => {
-                    document.getElementById('businessModalLabel').textContent = business.name.replaceAll (';', ',') || 'Unknown Business';
-                    
                     const modalBody = document.querySelector('#businessModal .modal-body');
                     modalBody.innerHTML = `                       
                         <img src="${business.id + ".png"}" class="card-img-top" alt="${business.name}">
@@ -223,7 +221,7 @@
                         <p id="modalServices"><span class="highlight">Services:</span> ${business.services.replaceAll(';', ',')}</p>
                         ${business.address ? ` <p id="modalAddress"><span class="highlight">Address:</span> ${business.address.replaceAll(';', ',')}</p> ` : ''}
                         <p id="modalArea"><span class="highlight">Service Area:</span> ${business.area}</p>
-                        ${business.website ? `<a href="${business.website}" class="btn accent-bg mt-3">Visit Website</a>` : ''}
+                        ${business.website ? `<a href="${business.website}" class="btn hover-text mt-3">Visit Website</a>` : ''}
                    `; 
                     const modal = new bootstrap.Modal(document.getElementById('businessModal'));
                     modal.show();
