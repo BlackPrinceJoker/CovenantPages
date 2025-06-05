@@ -50,7 +50,6 @@
             border-radius: 10px;
         }
         .modal-header {
-            background-color: #343d68;
             color: #fff;
         }
     </style>
@@ -94,7 +93,6 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="businessModalLabel"></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -221,7 +219,7 @@
                         <p id="modalServices"><span class="highlight">Services:</span> ${business.services.replaceAll(';', ',')}</p>
                         ${business.address ? ` <p id="modalAddress"><span class="highlight">Address:</span> ${business.address.replaceAll(';', ',')}</p> ` : ''}
                         <p id="modalArea"><span class="highlight">Service Area:</span> ${business.area}</p>
-                        ${business.website ? `<a href="${business.website}" class="btn btn-secondary hover-text mt-3 highlight btn-large">Visit Website</a>` : ''}
+                        ${business.website ? `<a href="${business.website}" class="btn hover-text mt-3 highlight btn-large">Visit Website</a>` : ''}
                    `; 
                     const modal = new bootstrap.Modal(document.getElementById('businessModal'));
                     modal.show();
